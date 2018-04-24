@@ -1,0 +1,33 @@
+html, body {
+    font-family: 'Robot', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.section {
+    background: lightgray;
+}
+
+.section h1, .section h4 {
+    margin: 0px;
+    text-align: center;
+}
+label {
+    display: inline;
+}
+.section div {
+    margin: 8px;
+}
+input {
+    display: inline-block;
+    width: 80%;
+    height: 24px;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    background: #000000;
+    font-size: 1em;
+    color: white;
+    margin: 8px auto;
+}
