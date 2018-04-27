@@ -2,6 +2,7 @@ html, body {
     font-family: 'Robot', sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: content-box;
 }
 .section {
     background: lightgray;
@@ -30,4 +31,83 @@ button {
     font-size: 1em;
     color: white;
     margin: 8px auto;
+}
+
+.meme-section {
+    display: block;
+}
+
+.meme {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    color: white;
+    margin-left: 8px;
+}
+.meme img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.meme-top-text {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+.meme-top-text h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Impact;
+    font-size: 1.5em;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.815);
+}
+.meme-bottom-text {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+}
+
+.meme-bottom-text h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Impact;
+    font-size: 1.5em;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.815);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(107, 107, 107, 0.377);
+}
+.meme:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h1 {
+    text-align:center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 25%;
+    font-size: 4em;
+    color: rgba(0, 0, 0, 0.508);
 }
